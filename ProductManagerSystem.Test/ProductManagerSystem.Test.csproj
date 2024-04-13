@@ -20,8 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProductManagement.Shared\ProductManagementSystem.Shared.csproj" />
     <ProjectReference Include="..\ProductManagementSystem.API\ProductManagementSystem.API.csproj" />
     <ProjectReference Include="..\ProductManagementSystem.Application\ProductManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\ProductManagementSystem.Domain\ProductManagementSystem.Domain.csproj" />
+    <ProjectReference Include="..\ProductManagementSystem.Infrastructure\ProductManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

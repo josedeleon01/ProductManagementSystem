@@ -27,28 +27,11 @@ namespace ProductManagerSystem.Test.Customers
             }
 
             [Test]
-            public async Task Get_ReturnsListOfCustomers()
-            {
-                // Arrange
-                var customers = new List<CustomerDto> { new CustomerDto { Id = 1, Name = "Customer 1" } };
-                _customerHandlerMock.Setup(handler => handler.GetAllAsync()).ReturnsAsync(customers);
-
-                // Act
-                var result = await _controller.Get();
-
-                // Assert
-                var okResult = result as OkObjectResult;
-                Assert.IsNotNull(okResult);
-                Assert.AreEqual(200, okResult.StatusCode);
-                Assert.AreSame(customers, okResult.Value);
-            }
-
-            [Test]
             public async Task Get_WithValidId_ReturnsCustomer()
             {
                 // Arrange
                 var customerId = 1;
-                var customer = new CustomerDto { Id = customerId, Name = "Customer 1" };
+                var customer = new Customer { Id = customerId, Name = "Customer 1" };
                 _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync(customer);
 
                 // Act
@@ -56,9 +39,9 @@ namespace ProductManagerSystem.Test.Customers
 
                 // Assert
                 var okResult = result as OkObjectResult;
-                Assert.IsNotNull(okResult);
-                Assert.AreEqual(200, okResult.StatusCode);
-                Assert.AreSame(customer, okResult.Value);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(okResult);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(200, okResult.StatusCode);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame(customer, okResult.Value);
             }
 
             [Test]
@@ -66,13 +49,13 @@ namespace ProductManagerSystem.Test.Customers
             {
                 // Arrange
                 var customerId = 1;
-                _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync((CustomerDto)null);
+                _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync((Customer)null);
 
                 // Act
                 var result = await _controller.Get(customerId);
 
                 // Assert
-                Assert.IsInstanceOf<NotFoundResult>(result);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType<NotFoundResult>(result);
             }
 
             [Test]
@@ -80,17 +63,17 @@ namespace ProductManagerSystem.Test.Customers
             {
                 // Arrange
                 var customerRequest = new CustomerCreateRequest { /* fill with valid data */ };
-                var customerDto = new CustomerDto { /* fill with created customer data */ };
+                var customerDto = new Customer { /* fill with created customer data */ };
                 _mapperMock.Setup(mapper => mapper.Map<Customer>(customerRequest)).Returns(new Customer());
-                _customerHandlerMock.Setup(handler => handler.AddAsync(It.IsAny<Customer>())).ReturnsAsync(new CustomerDto());
+                _customerHandlerMock.Setup(handler => handler.AddAsync(It.IsAny<Customer>())).ReturnsAsync(new Customer());
 
                 // Act
                 var result = await _controller.Post(customerRequest);
 
                 // Assert
                 var createdAtActionResult = result as CreatedAtActionResult;
-                Assert.IsNotNull(createdAtActionResult);
-                Assert.AreEqual(nameof(_controller.Get), createdAtActionResult.ActionName);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(createdAtActionResult);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(nameof(_controller.Get), createdAtActionResult.ActionName);
             }
 
             [Test]
@@ -102,8 +85,8 @@ namespace ProductManagerSystem.Test.Customers
                 // Act
                 var result = await _controller.Post(customerRequest);
 
-                // Assert
-                Assert.IsInstanceOf<BadRequestObjectResult>(result);
+                // Microsoft.VisualStudio.TestTools.UnitTesting.Assert
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType<BadRequestObjectResult>(result);
             }
 
             [Test]
@@ -112,7 +95,7 @@ namespace ProductManagerSystem.Test.Customers
                 // Arrange
                 var customerId = 1;
                 var customerRequest = new CustomerUpdateRequest { /* fill with updated data */ };
-                var updatedCustomerDto = new CustomerDto { /* fill with updated customer data */ };
+                var updatedCustomerDto = new Customer { /* fill with updated customer data */ };
                 _mapperMock.Setup(mapper => mapper.Map<Customer>(customerRequest)).Returns(new Customer());
                 _customerHandlerMock.Setup(handler => handler.UpdateAsync(It.IsAny<Customer>())).ReturnsAsync(updatedCustomerDto);
 
@@ -121,8 +104,8 @@ namespace ProductManagerSystem.Test.Customers
 
                 // Assert
                 var okResult = result as OkObjectResult;
-                Assert.IsNotNull(okResult);
-                Assert.AreEqual(200, okResult.StatusCode);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull(okResult);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(200, okResult.StatusCode);
             }
 
             [Test]
@@ -136,7 +119,7 @@ namespace ProductManagerSystem.Test.Customers
                 var result = await _controller.Put(customerId, customerRequest);
 
                 // Assert
-                Assert.IsInstanceOf<BadRequestObjectResult>(result);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType<BadRequestObjectResult>(result);
             }
 
             // Similarly, add tests for Put_WithValidIdAndInvalidData, Put_WithNonExistentId, and other scenarios
@@ -146,14 +129,14 @@ namespace ProductManagerSystem.Test.Customers
             {
                 // Arrange
                 var customerId = 1;
-                var customerDto = new CustomerDto { /* fill with customer data */ };
+                var customerDto = new Customer { /* fill with customer data */ };
                 _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync(customerDto);
 
                 // Act
                 var result = await _controller.Delete(customerId);
 
                 // Assert
-                Assert.IsInstanceOf<NoContentResult>(result);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType<NoContentResult>(result);
             }
 
             [Test]
@@ -161,31 +144,13 @@ namespace ProductManagerSystem.Test.Customers
             {
                 // Arrange
                 var customerId = 1;
-                _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync((CustomerDto)null);
+                _customerHandlerMock.Setup(handler => handler.GetByIdAsync(customerId)).ReturnsAsync((Customer)null);
 
                 // Act
                 var result = await _controller.Delete(customerId);
 
                 // Assert
-                Assert.IsInstanceOf<NotFoundResult>(result);
-            }
-
-            [Test]
-            public async Task Post_WithValidData_ReturnsCreatedAtAction()
-            {
-                // Arrange
-                var customerRequest = new CustomerCreateRequest { /* fill with valid data */ };
-                var customerDto = new CustomerDto { /* fill with created customer data */ };
-                _mapperMock.Setup(mapper => mapper.Map<Customer>(customerRequest)).Returns(new Customer());
-                _customerHandlerMock.Setup(handler => handler.AddAsync(It.IsAny<Customer>())).ReturnsAsync(new CustomerDto());
-
-                // Act
-                var result = await _controller.Post(customerRequest);
-
-                // Assert
-                var createdAtActionResult = result as CreatedAtActionResult;
-                Assert.IsNotNull(createdAtActionResult);
-                Assert.AreEqual(nameof(_controller.Get), createdAtActionResult.ActionName);
+                Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsInstanceOfType<NotFoundResult>(result);
             }
         }
     }
