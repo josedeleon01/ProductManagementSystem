@@ -31,8 +31,9 @@ To run the Product Management System locally, **we need to have running the 2 ma
 In Solution Explorer, select the solution (the top node). Right-click the solution then select select properties option. 
 The Solution Property Pages dialog box appears.
 Expand the Common Properties node, and choose Startup Project.
-Choose the Multiple Startup Projects option and set the Action for ProductManagementSystem.API and  ProductManagementSystem.Client as Start. Click Apply and OK and Run the application.
+Choose the Multiple Startup Projects option and set the Action for ProductManagementSystem.API and  ProductManagementSystem.Client as Start. Click Apply and OK.
 For more reference on how to set multiple startup projects in Visual Studio [click here](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2022)
+4. Verify the **appsettings.json** configuration **ApiURL** node value for ProductManagementSystem.Client project is pointing to the port of the ProductManagementSystem.API project.
 
 ## Login Credentials
 
