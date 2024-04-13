@@ -12,10 +12,10 @@
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberFrom" For="@(() => CustomerItemListReport.ItemNumberFrom)" Label="Top items to search"
+                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberFrom" For="@(() => CustomerItemListReport.ItemNumberFrom)" Label="Item Number From"
                                   RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal" Immediate="true" InputType="InputType.Number"></MudTextField>
 
-                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberTo" For="@(() => CustomerItemListReport.ItemNumberTo)" Label="Top items to search"
+                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberTo" For="@(() => CustomerItemListReport.ItemNumberTo)" Label="Item Number To"
                                   RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal" Immediate="true" InputType="InputType.Number"></MudTextField>
                     <br />
                     <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Search</MudButton>
