@@ -1,0 +1,76 @@
+﻿@page "/items"
+
+<PageTitle>Items</PageTitle>
+<h2>Items</h2>
+<br />
+<MudCard Elevation="10">
+    <EditForm Model="item" OnValidSubmit="Save">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Add / Edit Item</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudTextField Required="true" @bind-Value="item.ItemNumber" For="@(() => item.ItemNumber)" Label="Item Number" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Number"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="item.Description" For="@(() => item.Description)" Label="Description" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Text"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="item.Price" For="@(() => item.Price)" Label="Price" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.AttachMoney"></MudTextField>
+
+                    <MudSelect Required="true" @bind-Value="item.CategoryId" HelperText="Category" T="int" For="@(() => item.CategoryId)" Label="Category" RequiredError="required!" Variant="Variant.Text">
+                        @foreach (var category in _categories)
+                        {
+                            <MudSelectItem Value="@(category.Id)">@(category.Name)</MudSelectItem>
+                        }
+                    </MudSelect>
+
+                    <div class="d-flex">
+                        <MudRadioGroup @bind-Value="item.IsActive" For="@(() => item.IsActive)" T="bool" Required="true" RequiredError="required!">
+                            <MudRadio Value="@(true)">Active</MudRadio>
+                            <MudRadio Value="@(false)">Inactive</MudRadio>
+                        </MudRadioGroup>
+                    </div>
+                    <br />
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Clear">Clear</MudButton><span>&nbsp;</span>
+                    <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Save</MudButton>
+                </MudCardContent>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+</MudCard>
+<br />
+<br />
+<MudTable Elevation="10" Items="@_items" @bind-customer="item" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+    <HeaderContent>
+        <MudTh>Item Number</MudTh>
+        <MudTh>Desciption</MudTh>
+        <MudTh>Price</MudTh>
+        <MudTh>Item Category</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="ItemNumber">@context.ItemNumber</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd DataLabel="Price">@context.Price.ToFormattedPrice()</MudTd>
+        <MudTd DataLabel="Category">@context.Category.Name</MudTd>
+        <MudTd DataLabel="IsActive">@(context.IsActive ? "Active" : "Inactive")</MudTd>
+        <MudTd DataLabel="">
+            <MudTooltip Text="Edit">
+                <MudFab Color="Color.Primary" @onclick="@(()=> Edit(context.Id))" Icon="@Icons.Material.Filled.Edit" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+            <MudTooltip Text="Delete">
+                <MudFab Color="Color.Secondary" @onclick="@(()=> Delete(context.Id))" Icon="@Icons.Material.Filled.Delete" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>

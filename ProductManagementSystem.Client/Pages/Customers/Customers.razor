@@ -1,0 +1,72 @@
+﻿@page "/customers"
+
+<PageTitle>Customers</PageTitle>
+<h2>Customers</h2>
+<br />
+<MudCard Elevation="10">
+    <EditForm Model="customer" OnValidSubmit="Save">
+        <DataAnnotationsValidator />
+        <MudGrid>
+            <MudItem xs="4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Add / Edit Customer</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudTextField Required="true" @bind-Value="customer.CustomerNumber" Label="Customer Number" RequiredError="required!" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Number" For="@(() => customer.CustomerNumber)"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="customer.Name" Label="Name" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Text" For="@(() => customer.Name)"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="customer.Phone" Label="Phone" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Telephone" For="@(() => customer.Phone)"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="customer.Email" Label="Email" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Email" For="@(() => customer.Email)"></MudTextField>
+
+                    <div class="d-flex">
+                        <MudRadioGroup @bind-Value="customer.Active" T="bool" Required="true" RequiredError="required!">
+                            <MudRadio Value="@(true)">Active</MudRadio>
+                            <MudRadio Value="@(false)">Inactive</MudRadio>
+                        </MudRadioGroup>
+                    </div>
+                    <br />
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Clear">Clear</MudButton><span>&nbsp;</span>
+                    <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Save</MudButton>
+                </MudCardContent>
+            </MudItem>
+        </MudGrid>
+    </EditForm>
+</MudCard>
+<br />
+<br />
+<MudTable Elevation="10" Items="@_customers" @bind-customer="customer" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+    <HeaderContent>
+        <MudTh>Customer Number</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Phone</MudTh>
+        <MudTh>Email</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="CustomerNumber">@context.CustomerNumber</MudTd>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Phone">@context.Phone</MudTd>
+        <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel="Status">@(context.Active ? "Active" : "Inactive")</MudTd>
+        <MudTd DataLabel="">
+            <MudTooltip Text="Edit">
+                <MudFab Color="Color.Primary" @onclick="@(()=> Edit(context.Id))" StartIcon="@Icons.Material.Filled.Edit" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+            <MudTooltip Text="Delete">
+                <MudFab Color="Color.Secondary" @onclick="@(()=> Delete(context.Id))" StartIcon="@Icons.Material.Filled.Delete" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>

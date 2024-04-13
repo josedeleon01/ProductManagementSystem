@@ -1,0 +1,55 @@
+﻿@page "/categories"
+
+<PageTitle>Categories</PageTitle>
+<h2>Categories</h2>
+<br />
+<MudCard Elevation="10">
+    <EditForm Model="category" OnValidSubmit="Save">
+        <DataAnnotationsValidator/>
+    <MudGrid>
+        <MudItem xs="4">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h6">Add / Edit Category</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                    <MudTextField Required="true" @bind-Value="category.Name" For="@(() => category.Name)" Label="Name" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                              Immediate="true" InputType="InputType.Text"></MudTextField>
+
+                <MudTextField  @bind-Value="category.Description" Label="Description" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                              Immediate="true" InputType="InputType.Text"></MudTextField>
+                <br />
+                <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Clear">Clear</MudButton><span>&nbsp;</span>
+                <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Save</MudButton>
+            </MudCardContent>
+        </MudItem>
+    </MudGrid>
+    </EditForm>
+</MudCard>
+<br />
+<br />
+<MudTable Elevation="10" Items="@_categories" @bind-customer="category" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+    <HeaderContent>
+        <MudTh>Category Id</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Description</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Id</MudTd>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd DataLabel="">
+            <MudTooltip Text="Edit">
+                <MudFab Color="Color.Primary" @onclick="@(()=> Edit(context.Id))" StartIcon="@Icons.Material.Filled.Edit" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+            <MudTooltip Text="Delete">
+                <MudFab Color="Color.Secondary" @onclick="@(()=> Delete(context.Id))" StartIcon="@Icons.Material.Filled.Delete" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+            </MudTooltip>
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>

@@ -1,0 +1,84 @@
+﻿@page "/customerItem"
+
+<PageTitle>Customer Item</PageTitle>
+<h2>Customer Item</h2>
+<br />
+<br />
+<MudCard Elevation="6">
+    <MudForm @ref="form" Validation="@(CustomerItemValidator.ValidateValue)">
+        <MudGrid>
+            <MudItem xs="4">
+                <MudCardHeader>
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h6">Add / Edit Customer Item</MudText>
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudSelect Required="true" HelperText="Customer" T="string" Label="Select a Customer" Variant="Variant.Text" ValueChanged="CustomerValueChanged">
+                        @foreach (var customer in _customers)
+                        {
+                            <MudSelectItem Value="@(customer.Id.ToString())">@(customer.Name)</MudSelectItem>
+                        }
+                    </MudSelect>
+
+                    <MudTextField ReadOnly="true" @bind-Value="customer.CustomerNumber" Label="Customer Number" Variant="Variant.Filled" Margin="Margin.Normal"
+                                  Immediate="true" InputType="InputType.Number" T="int"></MudTextField>
+
+                    <MudSelect Required="true" @bind-Value="customerItem.ItemId" HelperText="Item" T="int" Label="Select an Item" Variant="Variant.Text"
+                               For="@(() => customerItem.ItemId)">
+                        @foreach (var item in _items)
+                        {
+                            <MudSelectItem Value="@(item.Id)">@(String.Concat(item.ItemNumber, " - ", item.Description))</MudSelectItem>
+                        }
+                    </MudSelect>
+
+                    <MudTextField Required="true" @bind-Value="customerItem.Quantity" For="@(() => customerItem.Quantity)" Label="Quantity" RequiredError="required!"
+                                  Variant="Variant.Text" Margin="Margin.Normal" Immediate="true" InputType="InputType.Number" T="int"></MudTextField>
+
+                    <MudTextField Required="true" @bind-Value="customerItem.Price" For="@(() => customerItem.Price)" Label="Item Price" T="decimal" Adornment="Adornment.Start"
+                                  AdornmentIcon="@Icons.Material.Filled.AttachMoney" Immediate="true" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal" T="decimal">
+                    </MudTextField>
+
+                    <div class="d-flex">
+                        <MudRadioGroup @bind-Value="customerItem.Active" T="bool" Required="true" RequiredError="required!">
+                            <MudRadio Value="@(true)">Active</MudRadio>
+                            <MudRadio Value="@(false)">Inactive</MudRadio>
+                        </MudRadioGroup>
+                    </div>
+                    <br />
+                    <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="Clear">Clear</MudButton><span>&nbsp;</span>
+                    <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="Save">Save</MudButton>
+                </MudCardContent>
+            </MudItem>
+        </MudGrid>
+    </MudForm>
+</MudCard>
+<br />
+<br />
+<MudTable Elevation="10" Items="@_customerItems" @bind-customer="customerItem" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+    <HeaderContent>
+        <MudTh>Item Number</MudTh>
+        <MudTh>Description</MudTh>
+        <MudTh>Quantity</MudTh>
+        <MudTh>Price</MudTh>
+        <MudTh>Status</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="CustomerNumber">@context.Item.ItemNumber</MudTd>
+        <MudTd DataLabel="Name">@context.Item.Description</MudTd>
+        <MudTd DataLabel="Phone">@context.Quantity</MudTd>
+        <MudTd DataLabel="Email">@context.Price.ToFormattedPrice()</MudTd>
+        <MudTd DataLabel="Active">@(context.Active ? "Active" : "Inactive")</MudTd>
+        <MudTooltip Text="Edit">
+            <MudFab Color="Color.Primary" @onclick="() => Edit(context.CustomerId,context.ItemId)" StartIcon="@Icons.Material.Filled.Edit" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+        </MudTooltip>
+        <MudTooltip Text="Delete">
+            <MudFab Color="Color.Secondary" @onclick="() => Delete(context.CustomerId,context.ItemId)" StartIcon="@Icons.Material.Filled.Delete" Size="@Size.Small" IconSize="@Size.Small"></MudFab>
+        </MudTooltip>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+<input type="hidden" @bind-value="customer.Id" />

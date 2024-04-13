@@ -1,0 +1,41 @@
+﻿@page "/reports/customeritems"
+<br />
+<PageTitle>Customer Items Report</PageTitle>
+<MudCard Elevation="10">
+    <MudGrid>
+        <MudItem xs="4">
+            <MudCardHeader>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h6">Customer Items Report</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudTextField Required="true" @bind-Value="ItemNumberFrom" Label="Item Number From" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"></MudTextField>
+                <MudTextField Required="true" @bind-Value="ItemNumberTo" Label="Item Number To" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"></MudTextField>
+                <br />
+                <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="LoadReport">Search</MudButton>
+            </MudCardContent>
+        </MudItem>
+    </MudGrid>
+</MudCard>
+<br />
+<br />
+<MudTable Elevation="10" Items="@_customers" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh>Customer Number</MudTh>
+        <MudTh>Item Number</MudTh>
+        <MudTh>Description</MudTh>
+        <MudTh>Price</MudTh>
+        <MudTh>Quantity</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Customer.CustomerNumber</MudTd>
+        <MudTd DataLabel="Name">@context.Item.ItemNumber</MudTd>
+        <MudTd DataLabel="Description">@context.Item.Description</MudTd>
+        <MudTd DataLabel="Price">@context.Price.ToFormattedPrice()</MudTd>
+        <MudTd DataLabel="Quantity">@context.Quantity</MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
