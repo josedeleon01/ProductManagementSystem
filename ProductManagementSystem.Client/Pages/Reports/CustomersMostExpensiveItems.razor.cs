@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using ProductManagementSystem.Client.Interfaces.CustomerItems;
+using ProductManagementSystem.Shared.Dtos.CustomerItem;
 namespace ProductManagementSystem.Client.Pages.Reports
 {
     public partial class CustomersMostExpensiveItems
@@ -7,14 +8,13 @@ namespace ProductManagementSystem.Client.Pages.Reports
         [Inject]
         private ICustomerItemService CustomerItemService { get; set; }
 
-        private List<List<Domain.CustomerItems.CustomerItem>> CustomerItemGroup { get; set; }
+        private CustomersMostExpensiveItemsReport CustomerItemGroup { get; set; } = new();
 
-        private int top { get; set; }
-
-        protected override async Task OnInitializedAsync()
+        private async Task LoadReport()
         {
-            CustomerItemGroup = await CustomerItemService
-                .GetTopExpensiveItems(3);
+            CustomerItemGroup.CustomerItemGroup = await CustomerItemService
+                .GetTopExpensiveItems(CustomerItemGroup.Top);
+
         }
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using ProductManagementSystem.Client.Interfaces.CustomerItems;
+using ProductManagementSystem.Shared.Dtos.CustomerItem;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProductManagementSystem.Client.Pages.Reports
 {
@@ -8,15 +10,12 @@ namespace ProductManagementSystem.Client.Pages.Reports
         [Inject]
         private ICustomerItemService CustomerItemService { get; set; }
 
-        private List<Domain.CustomerItems.CustomerItem> _customers = [];
-        private int ItemNumberFrom { get; set; }
-
-        private int ItemNumberTo { get; set; }
+        private CustomerItemListReport CustomerItemListReport { get; set; } = new();
 
         private async Task LoadReport()
         {
-            _customers = (List<Domain.CustomerItems.CustomerItem>)await CustomerItemService
-                .GetAllByItemRangeAsync(ItemNumberFrom, ItemNumberTo);
+            CustomerItemListReport.Customers = (List<Domain.CustomerItems.CustomerItem>)await CustomerItemService
+                .GetAllByItemRangeAsync(CustomerItemListReport.ItemNumberFrom, CustomerItemListReport.ItemNumberTo);
         }
     }
 }
