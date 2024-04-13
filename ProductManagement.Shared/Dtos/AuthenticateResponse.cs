@@ -9,7 +9,7 @@ namespace ProductManagementSystem.Application.Dtos
         public string Token { get; set; }
         public DateTime Expiration { get; set; }
 
-		[Required]
-		public  string RefreshToken { get; set; }
+        [Required]
+        public string RefreshToken { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace ProductManagementSystem.Application.Dtos
         public string Email { get; set; }
 
         [Required]
-		[EmailAddress]
-		public string Password { get; set; }
+        [EmailAddress]
+        public string Password { get; set; }
     }
 }
