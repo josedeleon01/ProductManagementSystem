@@ -34,10 +34,9 @@ Expand the Common Properties node, and choose Startup Project.
 Choose the Multiple Startup Projects option and set the Action for ProductManagementSystem.API and  ProductManagementSystem.Client as Start. Click Apply and OK and Run the application.
 For more reference on how to set multiple startup projects in Visual Studio [click here](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2022)
 
-
 ## Login Credentials
 
-To access the application, you can use the following login credentials already stored in the Data Base:
+To access the application, you can use the following login credentials already stored in the database:
 
 - **Username:** josealbertodeleon8@gmail.com
 - **Password:** myPassw@ord
