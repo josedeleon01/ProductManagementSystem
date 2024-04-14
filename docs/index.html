@@ -16,7 +16,20 @@
     <link rel="stylesheet" href="styles/main.css">
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+    <style>
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+      th, td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style>
     
     
   </head>
@@ -107,7 +120,444 @@
     </ul>
   </li>
 </ul>
+<br>
+<h2>Database Schema Documentation</h2>
+    
+    <h2>Table: __EFMigrationsHistory</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MigrationId</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Unique migration identifier</td>
+            </tr>
+            <tr>
+                <td>ProductVersion</td>
+                <td>text</td>
+                <td>No</td>
+                <td>Version of the product</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <h2>Table: Items</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Unique item identifier</td>
+            </tr>
+            <tr>
+                <td>ItemNumber</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Item number</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>nvarchar(256)</td>
+                <td>Yes</td>
+                <td>Description of the item</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>decimal</td>
+                <td>No</td>
+                <td>Price of the item</td>
+            </tr>
+            <tr>
+                <td>IsActive</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Active status</td>
+            </tr>
+            <tr>
+                <td>CategoryId</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Category identifier</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: Customers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Unique customer identifier</td>
+            </tr>
+            <tr>
+                <td>CustomerNumber</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Customer number</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>nvarchar(100)</td>
+                <td>No</td>
+                <td>Name of the customer</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>nvarchar(20)</td>
+                <td>No</td>
+                <td>Phone number of the customer</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>nvarchar(100)</td>
+                <td>No</td>
+                <td>Email address of the customer</td>
+            </tr>
+            <tr>
+                <td>Active</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Active status</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: CustomerItems</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CustomerId</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Customer identifier</td>
+            </tr>
+            <tr>
+                <td>ItemId</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Item identifier</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Quantity of the item</td>
+            </tr>
+            <tr>
+                <td>Active</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Active status</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>decimal</td>
+                <td>No</td>
+                <td>Price of the item</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: Categories</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Unique category identifier</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>nvarchar(100)</td>
+                <td>No</td>
+                <td>Name of the category</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>nvarchar(256)</td>
+                <td>Yes</td>
+                <td>Description of the category</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetRoles</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Unique identifier of the role</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>nvarchar(256)</td>
+                <td>No</td>
+                <td>Name of the role</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetUsers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Unique user identifier</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>nvarchar(256)</td>
+                <td>Yes</td>
+                <td>Email address of the user</td>
+            </tr>
+            <tr>
+                <td>EmailConfirmed</td>
+                <td>bit</td>
+                <td>No</td>
+                <td>Email confirmation status</td>
+            </tr>
+            <tr>
+                <td>PasswordHash</td>
+                <td>nvarchar(max)</td>
+                <td>Yes</td>
+                <td>Hashed password</td>
+            </tr>
+            <tr>
+                <td>SecurityStamp</td>
+                <td>nvarchar(max)</td>
+                <td>Yes</td>
+                <td>Security stamp</td>
+            </tr>
+            <tr>
+                <td>PhoneNumber</td>
+                <td>nvarchar(max)</td>
+                <td>Yes</td>
+                <td>Phone number</td>
+            </tr>
+            <tr>
+                <td>PhoneNumberConfirmed</td>
+                <td>bit</td>
+                <td>No</td>
+                <td>Phone number confirmation status</td>
+            </tr>
+            <tr>
+                <td>TwoFactorEnabled</td>
+                <td>bit</td>
+                <td>No</td>
+                <td>Two-factor authentication status</td>
+            </tr>
+            <tr>
+                <td>LockoutEndDateUtc</td>
+                <td>datetime</td>
+                <td>Yes</td>
+                <td>End date of lockout</td>
+            </tr>
+            <tr>
+                <td>LockoutEnabled</td>
+                <td>bit</td>
+                <td>No</td>
+                <td>Lockout status</td>
+            </tr>
+            <tr>
+                <td>AccessFailedCount</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Number of access failures</td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+                <td>nvarchar(256)</td>
+                <td>No</td>
+                <td>Username</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetRoles</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Unique identifier of the role</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>nvarchar(256)</td>
+                <td>No</td>
+                <td>Name of the role</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetUserRoles</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UserId</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>User identifier</td>
+            </tr>
+            <tr>
+                <td>RoleId</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Role identifier</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetUserClaims</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>int</td>
+                <td>No</td>
+                <td>Unique claim identifier</td>
+            </tr>
+            <tr>
+                <td>UserId</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>User identifier</td>
+            </tr>
+            <tr>
+                <td>ClaimType</td>
+                <td>nvarchar(max)</td>
+                <td>Yes</td>
+                <td>Type of the claim</td>
+            </tr>
+            <tr>
+                <td>ClaimValue</td>
+                <td>nvarchar(max)</td>
+                <td>Yes</td>
+                <td>Value of the claim</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table: AspNetUserLogins</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Column</th>
+                <th>Data Type</th>
+                <th>Nullable</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LoginProvider</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Provider of the login</td>
+            </tr>
+            <tr>
+                <td>ProviderKey</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>Key of the provider</td>
+            </tr>
+            <tr>
+                <td>UserId</td>
+                <td>nvarchar(128)</td>
+                <td>No</td>
+                <td>User identifier</td>
+            </tr>
+        </tbody>
+    </table>
 </article>
           </div>
           
