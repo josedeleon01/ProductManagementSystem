@@ -1,0 +1,1506 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/productmanagementsystem/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.CategoriesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.CategoriesController.html",
+          "hash": "VHNb2Po6EFK0ilivrmMk6Ai2odw3CP5qgNLkLDkai6Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.CustomerItemController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.CustomerItemController.html",
+          "hash": "ZTbYLZY0dxMMeLe9xlJaeIpUMl5yT7FXVzcHJjVn5Xs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.CustomersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.CustomersController.html",
+          "hash": "fTWDod84aVru53yXstdbdoSG5mkYgPnYIlyBGSoHoGI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.ItemsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.ItemsController.html",
+          "hash": "Rjt13+BqcL55x0UjjyfAcTKEdOMr5pSqksFnCeobFT0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.UsersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.UsersController.html",
+          "hash": "C+Cstzrsxgjwcn7e/6n6rENgxiuLWSYCuX+5MJKw8Ok="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.Controllers.html",
+          "hash": "3GmInN1P3dBiD1lIzmr67BAWJGjymvVNnzn6ivkVZRM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.DependencyInjection.html",
+          "hash": "rjLtOT7TAjY23uAMMMwtvYnOgVUG4ax9eQpR5qiUZe0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.API.html",
+          "hash": "t6oPyWwexobGWGM0vgVFp9GTfRWSyG2kS29MXPMrt/A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Categories.CategoryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Categories.CategoryHandler.html",
+          "hash": "sJWR74AVMm9qEpt0rhGFCTPMzX8vcbZcCpz6s1KwQwk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Categories.html",
+          "hash": "/a39+XcBBTgqoKpg1Xv0dOdAQvyWQXBKxLqvwqjYx7E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.CustomerItem.CustomerItemHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.CustomerItem.CustomerItemHandler.html",
+          "hash": "C+Xhy+HifaFnD4+CRICi8vPBThg385KqCaz8IT/V3wA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.CustomerItem.html",
+          "hash": "qTbVBx1LzwKu7Esndk8Btjmv8MnTELkXbetDvgEgaVk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Customers.CustomerHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Customers.CustomerHandler.html",
+          "hash": "55FbqxxtKN1vmRJGa+Qgf0bmdchHJVvvYmLLF+o8OJ4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Customers.html",
+          "hash": "jT9ZFH3kU4suAzYAEVzGy53iDGXB7CZw+50hHD3TxFo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.DependencyInjection.html",
+          "hash": "0e7lGEilxB4wCP7PSmB7PnD8Kw0U27t4VhVXzjhsNc8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Dtos.AuthenticateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Dtos.AuthenticateRequest.html",
+          "hash": "qwKowvJtBPgAY8RoYoaj531lT4DIafZS2hirxbp70Uc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Dtos.AuthenticateResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Dtos.AuthenticateResponse.html",
+          "hash": "DBRLn8z8nCDIb8EB9WdeACjtGOGsCZfEYvcoCrGmGzc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Dtos.RegisterDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Dtos.RegisterDto.html",
+          "hash": "G5whgXFuupBtz+gPq/QZ5K3+HMGyyshl9btlAYaymCk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Dtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Dtos.html",
+          "hash": "ssZbm44c11XYmFMrhVSYrOPwanuY1vyekQeCZu5Iw1Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.ICategoryRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.ICategoryRepository.html",
+          "hash": "1Kx+lgTbSWf8X4Y5MSxnHlNvW3mkma+1ROSdVvP3GHk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.ICustomerItemRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.ICustomerItemRepository.html",
+          "hash": "qT485zBdwl1VJssmchs3i5TKOj/T8f4DmYc1AUf0wCs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.ICustomerRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.ICustomerRepository.html",
+          "hash": "AnKtaMUowqnSDqGwnoTy7ze1WAqswDljZFS4oyF6MQA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.IItemRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.IItemRepository.html",
+          "hash": "pknmC4/UkbQQ4d6ImZen+UqHLeNjLpLGay56YWA29Fk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.IJwtTokenGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.IJwtTokenGenerator.html",
+          "hash": "D6TE/iRkGLjxoa50IblegHzpRbUtNROX5Nd5g9awJ0I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Interfaces.html",
+          "hash": "n46gnAI8RgTiWmy3/3RAmjtG7gvtapus3fe/cuVOq8Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Items.ItemHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Items.ItemHandler.html",
+          "hash": "FaSmIgX8Kx9Yq+DQ2992xvNBb2fadn4iHmPMs1udNoU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Items.html",
+          "hash": "F+L/c1vtAHsH57+41/GAIlgWUJpiG/EIduHK7bYvY2o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Mappings.MappingProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Mappings.MappingProfile.html",
+          "hash": "BgrTF52Rkcmf/jSyFtFKV2Y75l9PUlZyEENPuA5rkTE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.Mappings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.Mappings.html",
+          "hash": "2kI+WfFKOX2ya++kCxusFrK5/JunQlUR4nqsIxrmEC0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Application.html",
+          "hash": "RV+f9dy7JaoHfqDbritxmF9CceYOT0QFEky7swCTzp4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Components.Common.ModelFluentValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Components.Common.ModelFluentValidator.html",
+          "hash": "ZmgvmOwdVHSo5HGc5yFQlO1BhJ0qP2v0oFphDnUi1yA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Components.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Components.Common.html",
+          "hash": "CnLSuABXdMMcdJcUpqMRA+LF9qdBT0/AROKFLf7Ffo8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.DecimalExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.DecimalExtensions.html",
+          "hash": "TTsP+crNHBbpnVmFNdNgBBj39diVGpzp5cGX7Yi+tg8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Handlers.AuthenticationHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Handlers.AuthenticationHandler.html",
+          "hash": "sqBtcnTx7AZYcP1Q8Z6Ibmb7TPixUyrLFdsBT2o22cc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Handlers.html",
+          "hash": "FoN6VdM+q2cHD10nQCaoMlUparnSlQ5byna3jdbRMNw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Categories.ICategoryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Categories.ICategoryService.html",
+          "hash": "QV1zgMVpa1TqU+rs3kXp+l95GHR/myszSHyOXUBwjD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Categories.html",
+          "hash": "P1y3bD5dBDXM+L958s3g9ZGOZnf502sqBHS3vcJrJ3U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.CustomerItems.ICustomerItemService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.CustomerItems.ICustomerItemService.html",
+          "hash": "cgDjRVDoZeYopRS2VY91qBhMrKBNHqHh4NHMiw/ddFQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.CustomerItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.CustomerItems.html",
+          "hash": "QTFTYcX3sXNtU5+mOynmu5yIoBGfHG+sl+08Lt85Ock="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Customers.ICustomerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Customers.ICustomerService.html",
+          "hash": "7niQqARduMKzifpnIg+aUmQdB4t56HdDh8mwlg24Pwc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Customers.html",
+          "hash": "oc1FlIA3/RZxTBAdgjilox5HhIGXx2WdsumbSTRkv0s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Items.IItemService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Items.IItemService.html",
+          "hash": "xvag51+tFX9hfZoPG9AMjVISttWugmc7lt0FGzJAs9A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Items.html",
+          "hash": "Dfy6KDgIr+gxFEQ1icDEHoWxsqEdtsYXxvJQfTORyJ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Users.IUserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Users.IUserService.html",
+          "hash": "oDGCa2sHs/CoknpBxwoFY72ue3SmJnPJWBT7muynduE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Interfaces.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Interfaces.Users.html",
+          "hash": "Rt8sz0p5cKwZlZOifhwY55Cq4QwqDhDCnVDzAW5x4sQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Layout.MainLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Layout.MainLayout.html",
+          "hash": "4ho+Kmm9wsiT+fZ9gWiQ7UwxRGnMjjgge5KmU7klKv4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Layout.html",
+          "hash": "sL6qhfk8cVYIdXyIXxz0/viTXugeIEU+2D9UIa1C6sc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Categories.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Categories.Categories.html",
+          "hash": "ofmj4Gkc0Ety6JxDDx+boFm7595y0r33tdQn2/xM6Vo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Categories.html",
+          "hash": "vWSM2glHULyswCIMDHN0RXLQELcjqKPO9h09hyORVBU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.CustomerItem.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.CustomerItem.CustomerItem.html",
+          "hash": "inOrnAXzYUukDBJZbcGBpF2uM2HGwYb0/6hhD6yFfdU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.CustomerItem.html",
+          "hash": "yL0x0kNeCZIDT1UCUr+dM7FfvRL2cbJ2bill9TPJa6k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Customers.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Customers.Customers.html",
+          "hash": "q4CobOlyvdBpu0/c0CBuVhlAdWcLO8LLc09apLvuPtE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Customers.html",
+          "hash": "d74mJYeAE9ySrGiK3hqe67SKkwNJEG1MEfPAv+xIBDw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Items.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Items.Items.html",
+          "hash": "7Fpim5xi+lOAGQLfIBCtyW6kEjTezLUog46lpkEtp5s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Items.html",
+          "hash": "cSj1M1+p/ooJlb0ZFm8NqU/ecM8kpcDoBNfJyGjhp2Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Login.Login.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Login.Login.html",
+          "hash": "oiGAo2ipo8hA5gbDN3VzkzOvEXbTUUDz+fdrkFs1uyA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Login.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Login.html",
+          "hash": "laOq5ts0i4utCcI7MclgkEAyJo5MKFFqicEjduAtLIY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Reports.CustomerItemReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Reports.CustomerItemReport.html",
+          "hash": "wtud7vMURPrIqqRTu9W44vUYnkVA5eVyOio1GdSEF5Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Reports.CustomersMostExpensiveItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Reports.CustomersMostExpensiveItems.html",
+          "hash": "fSDhsC/7DKMrmd1V+ij1fyH8DbqaEas4F5+r5J7joEA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Pages.Reports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Pages.Reports.html",
+          "hash": "2IGOCMTMqMzjTU3NDfYTRsUZe0y6mYNgVxNCYmELrf0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Categories.CategoryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Categories.CategoryService.html",
+          "hash": "4gJvFiIbH2HIDqqrl4k61DfQ/e29DSIWkUrO8ztKvkg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Categories.html",
+          "hash": "pOdGpUU0q+e4AqjvjLjEgRtCR8BTEVoaGqabjno7XRo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.CustomerItems.CustomerItemService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.CustomerItems.CustomerItemService.html",
+          "hash": "IEZxK10CAl3dGapsTSR8HuJFmIoFeCTuBBv7f7Vjd+4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.CustomerItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.CustomerItems.html",
+          "hash": "Zwh/3Jr+lYasjnuKbEc5K5d3EbCh1/yJScclfcujFDQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Customers.CustomerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Customers.CustomerService.html",
+          "hash": "+24GVThWDWdAQJ/m/UvTS7yPdgaX6A5YvxWfyUY6jag="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Customers.html",
+          "hash": "K+nLCAFtC47rUmqsJH36mnKXrkn4QCctVAjwEd28nTs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Items.ItemService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Items.ItemService.html",
+          "hash": "7Uhv9JzoDGAAaD5/Uw4248aqNz5xe9EmCHcbRyc6b/8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Items.html",
+          "hash": "KjtqxZKuCYufZv7oZf/n8Db9il7hrwoZ35RFDOxKcO0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Users.UserService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Users.UserService.html",
+          "hash": "I64dB0ygsVC2Oo9pI5mZZo19q9T5t+i3M8bLHGQYNgY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.Services.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.Services.Users.html",
+          "hash": "srV8zccDwYrpW9aOPyWs8EXhoRDV6PgdsAdXLvgaWoY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Client.html",
+          "hash": "4ATSyqJhpQmzP3ui1TlSzPjL4BvtbQO3ZAFaQjRPz4w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Categories.Category.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Categories.Category.html",
+          "hash": "6mTNa6GKNubZIRSJI+xWCm2X8nvMgi8NbJyNn+ECDXc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Categories.html",
+          "hash": "l5xHEeueJx8MBcczltR0y0MWBy4WTeKPOz7O9qHRASY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.CustomerItems.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.CustomerItems.CustomerItem.html",
+          "hash": "vV7vbXmYHzvf/Dn5iwW3EmrIq+R3lo9SXDoEwFPc+PU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.CustomerItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.CustomerItems.html",
+          "hash": "xjsswA78Je7aDLXiEOqU2Z7bLbmVxH3hZZvzno/J3fw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Customers.Customer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Customers.Customer.html",
+          "hash": "uLOWvb7gWH+RURgSrl8zsO6l0vmp2iVCRikCBy+n7QQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Customers.html",
+          "hash": "DoDbRRzi8qrFrcH3UB8M/5qJ4P9YyC8bOJZ7vvke+bw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Item.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Item.Item.html",
+          "hash": "cfQY3tA8zcDRLSBtTfPxTw+PTmT4zjwcMjrPZb8GloA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Item.html",
+          "hash": "byW+uhKjNJ0necJE4lLHYpF5k8BtECWcHvfvQkxWtf0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Users.AppUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Users.AppUser.html",
+          "hash": "tjLm8OwFl2mmktki0HQyKs28bPzpXSbTxA3d6azEQWk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Domain.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Domain.Users.html",
+          "hash": "gTmTlC7Miwi4m2xo8T66ukQS5pkDHHZGBScD1HJilFw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.DependencyInjection.html",
+          "hash": "qpTG5tKehJuxLkW9y6weyPic4aTHn17VGMoD1RWlu/M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Seed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Seed.html",
+          "hash": "FQwPb5Tk8mnK0po6QtRbQbABwfPdhE/oLE7UHedoOlU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Tokens.JwtTokenGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Tokens.JwtTokenGenerator.html",
+          "hash": "mUc3VS5IiM2pkcevRvptM9Wl9pFd3ssKkBkUaIdFTbw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Tokens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.Tokens.html",
+          "hash": "gV1o7ZFKrNI7dBopFr2QMjGvtW71xMwT8LmsfeCkzOM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Helpers.html",
+          "hash": "Ad0F8E98QDIoBpnlJgoVlKyPDBqVBD27crnrJ+MtjTQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Migrations.InitialMigration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Migrations.InitialMigration.html",
+          "hash": "Of9jrG/o/cD5eiuPrCyRQqTWDRW/D/v91ZIwIpmgn6w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Migrations.html",
+          "hash": "VSP04SCbr6mZ3NlfLTYA+RFA7AXCswiQ55pvJ7z/Lek="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.AppDbContext.html",
+          "hash": "w8v1/mR2J6jTT1VYhQxDyG7iu1rmXYUn8JElpIwRk6Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Categories.CategoryRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Categories.CategoryRepository.html",
+          "hash": "4nHeZ2h9QEBg2L9U4WK+J4xWvePeVW8VKgm/pUm20ow="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Categories.html",
+          "hash": "tv9naHLsnP5iPAa3UvhCwrMY6mcCGgeUPWqlIpwwiRo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.CustomerItem.CustomerItemRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.CustomerItem.CustomerItemRepository.html",
+          "hash": "oRt/aK6Oj4bRhUChiF6UsmiwR1RQfUsqmmatlxzlqXc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.CustomerItem.html",
+          "hash": "j+tbxBui/hSsDUhSW+VbpLuJxXCo/V1+hn8Y4cxaQHA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Customers.CustomerRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Customers.CustomerRepository.html",
+          "hash": "Jn/4DTFPspQQChXR17rqzS4LdxfPYC/vpCmRFSqNmcI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Customers.html",
+          "hash": "6VEiG4heQAOhHlAAQ7VFVhgcc8sLBmMQnYlvUrzFfOM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Items.ItemRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Items.ItemRepository.html",
+          "hash": "hjwpqhXwNwA9KdTO/qA1mZDDAnbXAO15u6sLyg8G2W0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.Items.html",
+          "hash": "9eBNatmrevGTRDSj1Y8Hp1t3ttONtw7l52kEbrZp8l4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.Persistance.html",
+          "hash": "q1uhCA3/0SSjYyfLVlik5Wx+Sx6chdwrgS8awZ6+evg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Infrastructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Infrastructure.html",
+          "hash": "Ed4F5ea05buEUKBLytA0UKuy+QcGe6FWteDyuCpN9o0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.AuthenticateRefresh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.AuthenticateRefresh.html",
+          "hash": "f4iXNN13KA7f3pKu43evPknC8IuKiIy+RYZpm4K8K+Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.CategoryCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.CategoryCreateRequest.html",
+          "hash": "pLmTfqjCwUey21yG6eCVLUdfPuoe4GapUiB3mpF9FkU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.CategoryUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.CategoryUpdateRequest.html",
+          "hash": "19rl3j/5VmD6CZjFtuD2PgdwhQbD8u1fMZ6KMT8SL5A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Categories.html",
+          "hash": "Dp1peBs1tyq8+s/o0eCHMQw6F2ZxrkUykmE2R4XS3Z8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemCreateRequest.html",
+          "hash": "pKmcN6Aut/wZOd0uHHVLJe3KvO6i/XUehDU6NkQcwhk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemListReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemListReport.html",
+          "hash": "I3BKMmmzTaVVkyUGzhEdio3cwehySebo41eihQOgu40="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomerItemUpdateRequest.html",
+          "hash": "VRzn9MNQCBg6HVS3ZbsLRp+m/+udzE4B7BDfK23fw+0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomersMostExpensiveItemsReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.CustomersMostExpensiveItemsReport.html",
+          "hash": "Mqw73CYL/oyNGbjHJ01jsGz6E8L7xcVWORywpVSNAA8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.CustomerItem.html",
+          "hash": "bNEcsHMfSWa1H2XNF0EO6/Pu2V3a+CJCEwXIW43Bzkk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.CustomerCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.CustomerCreateRequest.html",
+          "hash": "PDdTiPwsGWu4Ha7YBmPwMIe3ox1KbQUNwuCdNEjjvac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.CustomerUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.CustomerUpdateRequest.html",
+          "hash": "hyJPUJ5/qAGg9T/P4GsDhjg4S21hkLAJfTnunXjzB6c="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Customers.html",
+          "hash": "VpnMaLE1MnRhcj34u4pHOXRPmLYjWFw+6KgpUMG/5WY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.ItemCreateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.ItemCreateRequest.html",
+          "hash": "taugT46dNA1faB/Zp4cadWuQlwdOSIQP23u7kGMJf74="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.ItemUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.ItemUpdateRequest.html",
+          "hash": "Qc8X5dYAskXKeISOFsCH8a+RABzzj7A2Bgld8JIDHsE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.Items.html",
+          "hash": "J0YQy+dwywbUOwvSzzOu/cAmcarAKH/79teJKFBRIFc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProductManagementSystem.Shared.Dtos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProductManagementSystem.Shared.Dtos.html",
+          "hash": "gp7tUvGPuSI+GqtpczknNLU87vrXSLu9ejpX4lR9QAU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "p6OoP8ofn2HNq5geNFDWkV8kyj4i4LhtZF/Es6G1WFw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "8kwrI4R/F74uBclHOtp4b1avnWhGkvcx2rZ3YcxLLnQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "cTZll+i0U+ueJAPKSwASC5qQ613KJWY1BANwACYxX2M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "j2/5/+Z15IvN8CZa8/dC2NA4JXSmnQL7sqbBORmjOpY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 115,
+          "skipped_file_count": 115
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

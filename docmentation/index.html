@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>This is the HOMEPAGE. </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="This is the HOMEPAGE. ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1>Product Management System Documentation</h1>
+
+<h2>Introduction</h2>
+
+<p>Welcome to the documentation for the Product Management System project. This project is designed to showcase the implementation of a basic Product Management System using ASP.NET WEB API, Blazor front-end and C#. The system encompasses essential modules such as Item Management, Customer Management, Customer-Item Relationship Management, and Reporting functionalities.</p>
+
+<p>The primary objective of the application is to empower employees with the ability to efficiently manage customers, items, and their associations, while also facilitating the generation of insightful reports. The system operates with a Sqlite database backend to ensure persistent storage of data.</p>
+
+<h3>Key Features:</h3>
+
+<ul>
+  <li><strong>Clean Front-End:</strong> The user interface is designed to be intuitive and user-friendly, ensuring a smooth user experience.</li>
+  <li><strong>Blazor Front-End Framework:</strong> The project utilizes the Blazor framework for the front-end, leveraging its capabilities for building interactive web applications with C#.</li>
+  <li><strong>Form Validations:</strong> Both backend and frontend form validations are integrated to enhance data integrity and user input validation.</li>
+  <li><strong>Documentation:</strong> Comprehensive documentation is provided to aid in understanding the project structure, implementation details, and usage instructions.</li>
+  <li><strong>Custom Reports:</strong> A custom report feature is implemented to generate reports showcasing customers along with their X most expensive items.</li>
+  <li><strong>Login Requirement:</strong> Security is enforced through a login requirement using ASP.NET Identity, ensuring that only authorized users can access the system.</li>
+</ul>
+
+<h2>Structure</h2>
+
+<p>The project is structured following the principles of Clean Architecture, which emphasizes separation of concerns and maintainability. The Clean Architecture approach ensures that the system's core business logic remains decoupled from external dependencies, facilitating easier testing, scalability, and future modifications.</p>
+
+<p>The project consists of the following layers:</p>
+
+<ul>
+  <li><strong>Domain Layer:</strong>
+    <ul>
+      <li>This layer contains the core business logic and domain entities. It encapsulates the fundamental rules and concepts of the application, independent of any specific technology or framework. Entities, value objects, and domain services reside in this layer.</li>
+    </ul>
+  </li>
+  <li><strong>Infrastructure Layer:</strong>
+    <ul>
+      <li>The Infrastructure layer houses external concerns such as database access, file I/O, third-party integrations, and other infrastructure-related components. Repositories, database contexts, and external service clients are typically implemented in this layer.</li>
+    </ul>
+  </li>
+  <li><strong>Application Layer:</strong>
+    <ul>
+      <li>The Application layer serves as an intermediary between the Domain and Infrastructure layers. It orchestrates interactions between domain entities and infrastructure components, implementing use cases and application-specific business logic. This layer often contains application services, use case interactors, and other application-specific logic.</li>
+    </ul>
+  </li>
+  <li><strong>Client Blazor UI:</strong>
+    <ul>
+      <li>The Client Blazor UI layer represents the user interface of the application, built using the Blazor framework. It consumes the API exposed by the Application layer to interact with the system. Components, pages, and client-side logic are implemented in this layer to provide an interactive and responsive user experience.</li>
+    </ul>
+  </li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/josedeleon01/ProductManagementSystem/blob/main/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
