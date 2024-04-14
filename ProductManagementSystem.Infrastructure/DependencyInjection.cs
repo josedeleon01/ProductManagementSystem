@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using ProductManagementSystem.Infrastructure.Persistance.Categories;
 using ProductManagementSystem.Application.Interfaces;
 using ProductManagementSystem.Infrastructure.Persistance.Customers;

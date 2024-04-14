@@ -1,5 +1,4 @@
 ﻿using ProductManagementSystem.Application.Interfaces;
-using ProductManagementSystem.Domain.Item;
 using System.Linq.Expressions;
 
 namespace ProductManagementSystem.Application.CustomerItem

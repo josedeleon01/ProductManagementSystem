@@ -7,18 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ProductManagementSystem.API.Controllers
 {
-    /// <summary>
-    /// Controller for managing categories.
-    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
     public class CategoriesController(CategoryHandler categoryHandler, IMapper _mapper) : ControllerBase
     {
-        /// <summary>
-        /// Retrieves all categories.
-        /// </summary>
-        /// <returns>An action result containing the list of categories.</returns>
         // GET: api/<CategoriesController>
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -28,13 +21,7 @@ namespace ProductManagementSystem.API.Controllers
 
         }
 
-        /// <summary>
-        /// Retrieves a category by its ID.
-        /// </summary>
-        /// <param name="id">The ID of the category to retrieve.</param>
-        /// <returns>An action result containing the retrieved category, or NotFound if the category is not found.</returns>
         // GET api/<CategoriesController>/5
-
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
@@ -45,11 +32,6 @@ namespace ProductManagementSystem.API.Controllers
             return Ok(category);
         }
 
-        /// <summary>
-        /// Creates a new category.
-        /// </summary>
-        /// <param name="categoryRequest">The data for the new category.</param>
-        /// <returns>An action result containing the created category.</returns>
         // POST api/<CategoriesController>
         [HttpPost]
         public async Task<IActionResult> Post(CategoryCreateRequest categoryRequest)
@@ -59,12 +41,6 @@ namespace ProductManagementSystem.API.Controllers
             return CreatedAtAction(nameof(Get), new { id = addedCategory.Id }, addedCategory);
         }
 
-        /// <summary>
-        /// Updates a category by its ID.
-        /// </summary>
-        /// <param name="id">The ID of the category to update.</param>
-        /// <param name="categoryRequest">The updated data for the category.</param>
-        /// <returns>An action result containing the updated category, or NotFound if the category is not found, or BadRequest if the provided ID does not match the ID in the request body.</returns>
         // PUT api/<CategoriesController>/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, CategoryUpdateRequest categoryRequest)
@@ -81,11 +57,6 @@ namespace ProductManagementSystem.API.Controllers
             return Ok(updatedCategory);
         }
 
-        /// <summary>
-        /// Deletes a category by its ID.
-        /// </summary>
-        /// <param name="id">The ID of the category to delete.</param>
-        /// <returns>An action result indicating success, or NotFound if the category is not found.</returns>
         // DELETE api/<CategoriesController>/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)

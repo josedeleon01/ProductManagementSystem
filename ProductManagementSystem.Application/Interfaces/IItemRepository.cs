@@ -1,5 +1,4 @@
-﻿using ProductManagementSystem.Domain.Categories;
-using ProductManagementSystem.Domain.Item;
+﻿using ProductManagementSystem.Domain.Item;
 using System.Linq.Expressions;
 
 namespace ProductManagementSystem.Application.Interfaces

@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProductManagement.Shared\ProductManagementSystem.Shared.csproj" />
+    <ProjectReference Include="..\ProductManagementSystem.Domain\ProductManagementSystem.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

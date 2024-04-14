@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using ProductManagementSystem.Application.Interfaces;
-using ProductManagementSystem.Domain.Users;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -9,7 +7,7 @@ using System.Text;
 
 namespace ProductManagementSystem.Infrastructure.Helpers.Tokens
 {
-    public class JwtTokenGenerator(IConfiguration _config) //: IJwtTokenGenerator
+    public class JwtTokenGenerator(IConfiguration _config) 
     {
         public JwtSecurityToken GenerateJwt(string username)
         {
@@ -43,24 +41,5 @@ namespace ProductManagementSystem.Infrastructure.Helpers.Tokens
 
             return Convert.ToBase64String(randomNumber);
         }
-
-        //public string GenerateToken(AppUser user)
-        //{
-        //    var tokenHandler = new JwtSecurityTokenHandler();
-        //    byte[] key = Encoding.ASCII.GetBytes(_authSettings.Secret);
-        //    tokenHandler.ValidateToken(token, new TokenValidationParameters
-        //    {
-        //        ValidateIssuerSigningKey = true,
-        //        IssuerSigningKey = new SymmetricSecurityKey(key),
-        //        ValidateIssuer = false,
-        //        ValidateAudience = false,
-        //        ClockSkew = TimeSpan.Zero
-        //    }, out var validatedToken);
-
-        //    var jwtToken = (JwtSecurityToken)validatedToken;
-        //    var userId = int.Parse(jwtToken.Claims.First(c => c.Type == "sub").Value);
-
-        //    context.Items["User"] = userService.GetById(userId);
-        //}
     }
 }
