@@ -55,6 +55,14 @@ Using SQLite as the database provider offers several advantages, including:
 - **Performance:** SQLite is known for its excellent performance, making it suitable for small applications.
 - **No Server Required:** Unlike traditional relational database management systems, SQLite does not require a separate server process, making it ideal for standalone applications.
 
+## Documentation
+
+For more information, please visit the Documentation:
+
+- **Home:** [https://josedeleon01.github.io/ProductManagementSystem/index.html](https://josedeleon01.github.io/ProductManagementSystem/index.html)
+- **Docs:** [https://josedeleon01.github.io/ProductManagementSystem/api/ProductManagementSystem.API.html](https://josedeleon01.github.io/ProductManagementSystem/api/ProductManagementSystem.API.html)
+
+
 
 
 
