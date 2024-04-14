@@ -56,8 +56,8 @@ Using SQLite as the database provider offers several advantages, including:
 
 For more information, please visit the Documentation:
 
-- **Home:** [https://josedeleon01.github.io/ProductManagementSystem/index.html](https://josedeleon01.github.io/ProductManagementSystem/index.html)
-- **Docs:** [https://josedeleon01.github.io/ProductManagementSystem/api/ProductManagementSystem.API.html](https://josedeleon01.github.io/ProductManagementSystem/api/ProductManagementSystem.API.html)
+- **Intro:** [Home](https://josedeleon01.github.io/ProductManagementSystem/index.html)
+- **Docs:** [Documets](https://josedeleon01.github.io/ProductManagementSystem/api/ProductManagementSystem.Domain.CustomerItems.CustomerItem.html)
 
 
 
