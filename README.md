@@ -44,15 +44,12 @@ To access the application, you can use the following login credentials already s
 - 
 ## Sqlite Database
 
-The Project uses Sqlite database provider. The Project utilize SQLite as the database provider. SQLite is a lightweight, file-based relational database management system that is widely used for embedded database applications due to its simplicity, ease of use, and minimal setup requirements.
+The Project uses Sqlite database provider. SQLite is a lightweight, file-based relational database management system that is used for embedded database applications due to its simplicity, ease of use, and minimal setup requirements.
 
-You can find the database file named `ProductManagerDB.db` under the `ProductManagementSystem.API` project directory. This file serves as the SQLite database for storing all the data related to the product management system.
-
-If you need to inspect or query the database, you can use any SQLite viewer tool, such as [SQLite Browser](https://sqlitebrowser.org). These tools allow you to open the SQLite database file and perform various operations such as querying data, viewing tables, and making modifications directly to the database.
+You can find the database file named `ProductManagerDB.db` under the `ProductManagementSystem.API` project directory. This file serves as the SQLite database for storing all the data related to the product management system. If you need to inspect or query the database, you can use any SQLite viewer tool, such as [SQLite Browser](https://sqlitebrowser.org). These tools allow you to open the SQLite database file and perform various operations such as querying data, viewing tables, and making modifications directly to the database.
 
 Using SQLite as the database provider offers several advantages, including:
 - **Portability:** Since SQLite databases are stored in a single file, they are highly portable and can be easily transferred between different environments.
-- **Performance:** SQLite is known for its excellent performance, making it suitable for small applications.
 - **No Server Required:** Unlike traditional relational database management systems, SQLite does not require a separate server process, making it ideal for standalone applications.
 
 ## Documentation
