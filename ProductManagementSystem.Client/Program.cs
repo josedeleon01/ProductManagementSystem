@@ -14,6 +14,7 @@ using ProductManagementSystem.Client.Handlers;
 using MudBlazor.Services;
 using ProductManagementSystem.Client.Services.CustomerItems;
 using ProductManagementSystem.Client.Interfaces.CustomerItems;
+using ProductManagementSystem.Client.Services.ComponentState;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -30,6 +31,7 @@ builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<ICustomerItemService, CustomerItemService>();
 builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddSingleton<NavMenuState>();
 builder.Services.AddBlazoredSessionStorageAsSingleton();
 builder.Services.AddMudServices();
 
