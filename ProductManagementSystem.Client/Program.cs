@@ -31,7 +31,7 @@ builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<ICustomerItemService, CustomerItemService>();
 builder.Services.AddSingleton<IUserService, UserService>();
-builder.Services.AddSingleton<NavMenuState>();
+builder.Services.AddSingleton<NavMenuStateService>();
 builder.Services.AddBlazoredSessionStorageAsSingleton();
 builder.Services.AddMudServices();
 

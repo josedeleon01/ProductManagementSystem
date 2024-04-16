@@ -6,12 +6,15 @@ namespace ProductManagementSystem.Client.Layout
 {
     public partial class MainLayout
     {
-        [Inject]
-        NavMenuState NavMenuState { get; set; }
-
+        private bool collapseNavMenu { get; set; } = false;
+        private string NavMenuCssClass { get; set; } 
         private void ToggleNavMenu()
         {
-            NavMenuState.ToggleNavMenu();
+            NavMenuCssClass = !collapseNavMenu ? "hide" : string.Empty;
+            collapseNavMenu =!collapseNavMenu;
+
+            // Notify Blazor to re-render the component
+            StateHasChanged();
 
         }
     }
