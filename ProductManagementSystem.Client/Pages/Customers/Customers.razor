@@ -41,7 +41,7 @@
 </MudCard>
 <br />
 <br />
-<MudTable Elevation="10" Items="@_customers" @bind-customer="customer" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+<MudTable Elevation="10" Items="@_customers" @bind-customer="customer" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true" RowsPerPage="5">
     <HeaderContent>
         <MudTh>Customer Number</MudTh>
         <MudTh>Name</MudTh>

@@ -1,6 +1,6 @@
 ﻿@page "/reports/customeritems"
 
-<PageTitle>Customer Items Report</PageTitle>
+<PageTitle>Customer Products Report</PageTitle>
 <br />
 <MudCard Elevation="10">
     <EditForm Model="CustomerItemListReport" OnValidSubmit="LoadReport">
@@ -9,14 +9,14 @@
             <MudItem xs="4">
                 <MudCardHeader>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Customer Items Report</MudText>
+                        <MudText Typo="Typo.h6">Customer Products Report</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberFrom" For="@(() => CustomerItemListReport.ItemNumberFrom)" Label="Item Number From"
+                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberFrom" For="@(() => CustomerItemListReport.ItemNumberFrom)" Label="Product Number From"
                                   RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal" Immediate="true" InputType="InputType.Number"></MudTextField>
 
-                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberTo" For="@(() => CustomerItemListReport.ItemNumberTo)" Label="Item Number To"
+                    <MudTextField Required="true" @bind-Value="CustomerItemListReport.ItemNumberTo" For="@(() => CustomerItemListReport.ItemNumberTo)" Label="Product Number To"
                                   RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal" Immediate="true" InputType="InputType.Number"></MudTextField>
                     <br />
                     <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Search</MudButton>
@@ -30,7 +30,7 @@
 <MudTable Elevation="10" Items="@CustomerItemListReport.Customers" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
     <HeaderContent>
         <MudTh>Customer Number</MudTh>
-        <MudTh>Item Number</MudTh>
+        <MudTh>Product Number</MudTh>
         <MudTh>Description</MudTh>
         <MudTh>Price</MudTh>
         <MudTh>Quantity</MudTh>

@@ -28,7 +28,7 @@
 </MudCard>
 <br />
 <br />
-<MudTable Elevation="10" Items="@_categories" @bind-customer="category" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+<MudTable Elevation="10" Items="@_categories" @bind-customer="category" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true" RowsPerPage="5">
     <HeaderContent>
         <MudTh>Category Id</MudTh>
         <MudTh>Name</MudTh>

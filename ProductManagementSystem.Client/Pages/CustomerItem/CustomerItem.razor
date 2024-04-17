@@ -1,6 +1,6 @@
 ﻿@page "/customerItems/customerItem"
 
-<PageTitle>Customer Item</PageTitle>
+<PageTitle>Customer Products</PageTitle>
 <br />
 <MudCard Elevation="6">
     <MudForm @ref="form" Validation="@(CustomerItemValidator.ValidateValue)">
@@ -8,7 +8,7 @@
             <MudItem xs="4">
                 <MudCardHeader>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Add / Edit Customer Item</MudText>
+                        <MudText Typo="Typo.h6">Add / Edit Customer Product</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
@@ -22,7 +22,7 @@
                     <MudTextField ReadOnly="true" @bind-Value="customer.CustomerNumber" Label="Customer Number" Variant="Variant.Filled" Margin="Margin.Normal"
                                   Immediate="true" InputType="InputType.Number" T="int"></MudTextField>
 
-                    <MudSelect Required="true" @bind-Value="customerItem.ItemId" HelperText="Item" T="int" Label="Select an Item" Variant="Variant.Text"
+                    <MudSelect Required="true" @bind-Value="customerItem.ItemId" HelperText="Item" T="int" Label="Select a Product" Variant="Variant.Text"
                                For="@(() => customerItem.ItemId)">
                         @foreach (var item in _items)
                         {
@@ -53,9 +53,9 @@
 </MudCard>
 <br />
 <br />
-<MudTable Elevation="10" Items="@_customerItems" @bind-customer="customerItem" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
+<MudTable Elevation="10" Items="@_customerItems" @bind-customer="customerItem" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true" RowsPerPage="5">
     <HeaderContent>
-        <MudTh>Item Number</MudTh>
+        <MudTh>Product Number</MudTh>
         <MudTh>Description</MudTh>
         <MudTh>Quantity</MudTh>
         <MudTh>Price</MudTh>

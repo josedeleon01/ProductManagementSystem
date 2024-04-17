@@ -1,6 +1,6 @@
 ﻿@page "/items/item"
 
-<PageTitle>Items</PageTitle>
+<PageTitle>Products</PageTitle>
 <br />
 <MudCard Elevation="10">
     <EditForm Model="item" OnValidSubmit="Save">
@@ -9,11 +9,11 @@
             <MudItem xs="4">
                 <MudCardHeader>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Add / Edit Item</MudText>
+                        <MudText Typo="Typo.h6">Add / Edit Product</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudTextField Required="true" @bind-Value="item.ItemNumber" For="@(() => item.ItemNumber)" Label="Item Number" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                    <MudTextField Required="true" @bind-Value="item.ItemNumber" For="@(() => item.ItemNumber)" Label="Products Number" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
                                   Immediate="true" InputType="InputType.Number"></MudTextField>
 
                     <MudTextField Required="true" @bind-Value="item.Description" For="@(() => item.Description)" Label="Description" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
@@ -47,10 +47,10 @@
 <br />
 <MudTable Elevation="10" Items="@_items" @bind-customer="item" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info" FixedHeader="true">
     <HeaderContent>
-        <MudTh>Item Number</MudTh>
+        <MudTh>Product Number</MudTh>
         <MudTh>Desciption</MudTh>
         <MudTh>Price</MudTh>
-        <MudTh>Item Category</MudTh>
+        <MudTh>Product Category</MudTh>
         <MudTh>Status</MudTh>
         <MudTh>Actions</MudTh>
     </HeaderContent>

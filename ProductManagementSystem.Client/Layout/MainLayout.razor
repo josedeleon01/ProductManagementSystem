@@ -10,6 +10,9 @@
             <MudToolBar Fixed="true">
                 <MudIconButton Icon="@Icons.Material.Outlined.Menu" @onclick="ToggleNavMenu" Color="Color.Inherit" Class="mr-5" />
                 <MudSpacer />
+                <MudBadge Content="3" Overlap="true" Class="mx-6 my-4">
+                    <MudIcon Icon="@Icons.Material.Filled.Email" Color="Color.Default" />
+                </MudBadge>
                 @* <MudIconButton Icon="@Icons.Material.Outlined.Add" />
                 <MudIconButton Icon="@Icons.Material.Outlined.Edit" />
                 <MudIconButton Icon="@Icons.Material.Outlined.Remove" Color="Color.Inherit" />
@@ -21,7 +24,7 @@
                     </ActivatorContent>
                     <ChildContent>
                         <MudMenuItem>Profile</MudMenuItem>
-                        <MudMenuItem>Sign Out</MudMenuItem>
+                        <MudMenuItem @onclick="LogOut">Sign Out</MudMenuItem>
                     </ChildContent>
                 </MudMenu>
             </MudToolBar>

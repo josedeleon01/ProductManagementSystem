@@ -1,6 +1,6 @@
 ﻿@page "/reports/customersmostexpensiveitems"
 
-<PageTitle>Customer Top Most expensive Items Report</PageTitle>
+<PageTitle>Customer Top Most expensive Products Report</PageTitle>
 <br />
 <MudCard Elevation="10">
     <EditForm Model="CustomerItemGroup" OnValidSubmit="LoadReport">
@@ -9,11 +9,11 @@
             <MudItem xs="4">
                 <MudCardHeader>
                     <CardHeaderContent>
-                        <MudText Typo="Typo.h6">Customer Top Most expensive Items Report</MudText>
+                        <MudText Typo="Typo.h6">Customer Top Most expensive Products Report</MudText>
                     </CardHeaderContent>
                 </MudCardHeader>
                 <MudCardContent>
-                    <MudTextField Required="true" @bind-Value="CustomerItemGroup.Top" For="@(() => CustomerItemGroup.Top)" Label="Top items to search" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
+                    <MudTextField Required="true" @bind-Value="CustomerItemGroup.Top" For="@(() => CustomerItemGroup.Top)" Label="Top Products to search" RequiredError="required!" Variant="Variant.Text" Margin="Margin.Normal"
                                   Immediate="true" InputType="InputType.Number"></MudTextField>
                     <br />
                     <MudButton Variant="Variant.Filled" Color="Color.Success" ButtonType='ButtonType.Submit'>Search</MudButton>
@@ -26,12 +26,12 @@
 <br />
 @foreach (var item in CustomerItemGroup.CustomerItemGroup)
 {
-    <MudAlert Severity="Severity.Normal">@item.FirstOrDefault().Customer.Name - Top @CustomerItemGroup.Top Expensive Items</MudAlert>
+    <MudAlert Severity="Severity.Normal">@item.FirstOrDefault().Customer.Name - Top @CustomerItemGroup.Top Expensive Products</MudAlert>
     <br />
     <MudTable Elevation="10" Items="@item" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
         <HeaderContent>
             <MudTh>Customer Number</MudTh>
-            <MudTh>Item Number</MudTh>
+            <MudTh>Product Number</MudTh>
             <MudTh>Description</MudTh>
             <MudTh>Price</MudTh>
             <MudTh>Quantity</MudTh>
